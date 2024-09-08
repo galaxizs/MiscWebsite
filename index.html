@@ -56,6 +56,8 @@
     setTimeout(() => {
       window.location.href = "main.html";
     }, 3000);
+  </script>
+<script>
     const asciiArt = document.getElementById('ascii-art');
     const text = asciiArt.innerText;
     const colors = ['#FF0000', '#FF7F00', '#FFFF00', '#00FF00', '#0000FF', '#4B0082', '#8B00FF']; 
@@ -65,6 +67,6 @@
         const color = colors[i % colors.length];
         coloredText += `<span style="color: ${color};">${text[i]}</span>`;
     asciiArt.innerHTML = coloredText;
-  </script>
+</script>
 </body>
 </html>
