@@ -61,18 +61,6 @@
   <p  style="font-size:18px;color:#fff;text-shadow:1px 1px 8px #000;">A website designed\coded by Galaxizs.</p>
   </main>
 <script>
-    const loadingTexts = ["Loading...", "Loading..", "Loading."];
-    let textIndex = 0;
-    setInterval(() => {
-      const loadingTextElement = document.getElementById("loading-text");
-      loadingTextElement.textContent = loadingTexts[textIndex];
-      textIndex = (textIndex + 1) % loadingTexts.length;
-    }, 500); 
-    setTimeout(() => {
-      window.location.href = "main.html";
-    }, 3000);
-</script>
-<script>
   import { fairyDustCursor } from "https://unpkg.com/cursor-effects@1.0.15/dist/esm.js";  new fairyDustCursor();
 new cursoreffects.fairyDustCursor({
   colors: [
