@@ -20,6 +20,14 @@
      .header {
         display: none;
       }
+   #hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
     </style>
 </head>
 <body>
@@ -41,7 +49,16 @@
   </header>
   <main>
    <section id="hero">
-  <h1 style="font-size:18px;color:#fff;text-shadow:1px 1px 8px #000;">Misc Website</h1>
+  <pre id="ascii-art" style="font-size:16px; font-family: monospace; text-shadow: 1px 1px 8px #000;">
+888b     d888 d8b                         888       888          888               d8b 888             
+8888b   d8888 Y8P                         888   o   888          888               Y8P 888             
+88888b.d88888                             888  d8b  888          888                   888             
+888Y88888P888 888 .d8888b   .d8888b       888 d888b 888  .d88b.  88888b.  .d8888b  888 888888  .d88b.  
+888 Y888P 888 888 88K      d88P"          888d88888b888 d8P  Y8b 888 "88b 88K      888 888    d8P  Y8b 
+888  Y8P  888 888 "Y8888b. 888            88888P Y88888 88888888 888  888 "Y8888b. 888 888    88888888 
+888   "   888 888      X88 Y88b.          8888P   Y8888 Y8b.     888 d88P      X88 888 Y88b.  Y8b.     
+888       888 888  88888P'  "Y8888P       888P     Y888  "Y8888  88888P"   88888P' 888  "Y888  "Y8888  
+</pre>
   <p  style="font-size:18px;color:#fff;text-shadow:1px 1px 8px #000;">A website designed\coded by Galaxizs.</p>
 </section>
   </main>
@@ -60,6 +77,16 @@ new cursoreffects.fairyDustCursor({
            "#0055AA#00AA55", "#0000FF#0055AA"
           ]
 });
+  const asciiArt = document.getElementById('ascii-art');
+    const text = asciiArt.innerText;
+    const colors = ['#FF0000', '#FF7F00', '#FFFF00', '#00FF00', '#0000FF', '#4B0082', '#8B00FF']; // Rainbow colors
+
+    let coloredText = '';
+    for (let i = 0; i < text.length; i++) {
+        const color = colors[i % colors.length];
+        coloredText += `<span style="color: ${color};">${text[i]}</span>`;
+    }
+    asciiArt.innerHTML = coloredText;
 </script>
 </body>
 </html>
