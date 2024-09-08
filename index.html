@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta property="og:title" content="Misc Website">
+  <meta property="og:description" content="A website with miscellaneous features. Made By Galaxizs">
+  <meta property="og:image" content="">
+  <title id="title">Misc Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #000;
+    }
+    #loader-container {
+      text-align: center;
+    }
+    #loader-container img {
+      width: 200px;
+      height: auto;
+    }
+    #loading-text {
+      color: white;
+      font-size: 24px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="loader-container">
+    <img src="Text.png" alt="Text Image">
+    <div id="loading-text">Loading...</div>
+  </div>
+
+  <script>
+    const loadingTexts = ["Loading...", "Loadin..", "Loading."];
+    let textIndex = 0;
+    setInterval(() => {
+      const loadingTextElement = document.getElementById("loading-text");
+      loadingTextElement.textContent = loadingTexts[textIndex];
+      textIndex = (textIndex + 1) % loadingTexts.length;
+    }, 500); 
+    setTimeout(() => {
+      window.location.href = "index.html";
+    }, 3000);
+  </script>
+</body>
+</html>
