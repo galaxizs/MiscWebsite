@@ -8,7 +8,7 @@
 <br>
 
 <div align="center">
-<strong>A website created/developed by galaxizs with miscellaneous features.</strong>
+<strong>A website created/developed by Ryuzaki/galaxizs with miscellaneous features.</strong>
 </div>
 
 <br>
