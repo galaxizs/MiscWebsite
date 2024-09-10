@@ -9,8 +9,8 @@
 
 <div align="center">
 <ul>
-<strong>A website created/developed by Ryuzaki/galaxizs with miscellaneous features.</strong>
-<strong>And thank you to Glitched Da Kitty Cat for rainbow text or other shit.</strong>
+<l><strong>A website created/developed by Ryuzaki/galaxizs with miscellaneous features.</strong></l>
+</l<strong>And thank you to Glitched Da Kitty Cat for rainbow text or other shit.</strong></l>
 </ul>
 </div>
 
